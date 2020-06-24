@@ -1,19 +1,36 @@
-#top_nav {
+body {
+	margin: 0;
+}
 
+#top_nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	padding: 10px;
 }
 
 #search {
-
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 #bottom_nav {
-	/*background-color: lightgray;*/
+	position: fixed;
+	bottom: 0;
+	background-color: lightgray;
+	width: 100%;
 }
 
 .listitem {
 	display: inline-block;
 	float: left;
-	padding: 10px;
+	padding: 0 10px 10px;
+}
+
+.middle {
+	display: block;
 }
 
 a:link {

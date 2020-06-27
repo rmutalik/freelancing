@@ -11,9 +11,9 @@ body {
 
 #search {
 	position: fixed;
-	top: 50%;
+	/*top: 50%;*/
 	left: 50%;
-	transform: translate(-50%, -100%);
+	transform: translate(-50%);
 }
 
 #search > *:not(:last-child) {
@@ -47,6 +47,13 @@ body {
 	float: right;
 }
 
+i {
+	position: relative;
+	left: -130px;
+	top: 30px;
+	color: lightgray;
+}
+
 a:link {
 	text-decoration: none;
 	color: #696969;
@@ -56,15 +63,23 @@ a:hover {
 	text-decoration: underline;
 }
 
+img.middle {
+	margin-top: 150px;
+}
+
 input.middle {
 	border-radius: 25px;
 	width: 200%;
 	border: 1px solid lightgray;
-	padding: 15px;
+	padding: 12px;
+	margin-left: -150px;
+	margin-top: -25px;
+	font-size: 16px;
 }
 
 input.middle:focus {
 	outline: none;
+	text-indent: 40px;
 }
 
 button {

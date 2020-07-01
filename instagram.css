@@ -4,6 +4,33 @@
 	/*background-color: red;*/
 }
 
+#logo {
+	float: left;
+}
+
+#search {
+	float: center;
+}
+
+#menu {
+	float: right;
+}
+
+.blank {
+	
+}
+
+.floatleft {
+	display: inline-block;
+	float: left;
+}
+
+.menus {
+	display: inline-block;
+	float: left;
+	padding: 0 10px;
+}
+
 li {
 	list-style-type: none;
 }

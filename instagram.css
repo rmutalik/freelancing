@@ -1,4 +1,6 @@
-
+body {
+	margin: 0;
+}
 
 #left_blank {
 	width: 15%;
@@ -8,7 +10,7 @@
 
 #middle {
 	width: 70%;
-	background-color: red;
+	/*background-color: red;*/
 	display: block;
 	float: left;
 }
@@ -22,25 +24,27 @@
 #top_nav {
 	width: 100%;
 	height: inherit;
-	background-color: lime;
+	display: flex;
+	justify-content: space-between;
+	/*background-color: lime;*/
+	overflow: hidden;
 }
 
 #logo {
-	display: inline-block;
-	float: left;
-	background-color: blue;
-	/*margin-right: 500px;*/
+	/*background-color: blue;*/
+	height: 50%;
+	margin-top: 15px;
 }
 
 #search {
-	display: inline-block;
-	float: left;
 	background-color: whitesmoke;
 	border: 1px solid lightgray;
 	border-radius: 4px;
 	text-align: center;
 	padding: 5px 35px;
 	font-family: Helvetica, Ariel, sans-serif;
+	height: 50%;
+	margin-top: 15px;
 }
 
 #search::placeholder {
@@ -52,12 +56,15 @@
 }
 
 #menu {
-	display: inline-block;
-	float: left;
 	margin: 0;
 	padding: 0;
-	background-color: yellow;
+	/*background-color: yellow;*/
 }
+
+#companyinfo ul li { display: inline; white-space: pre; }
+#companyinfo ul li:after { content: " \00b7 "; }
+#companyinfo ul li:last-child:after { content: ""; }
+
 
 .floatleft {
 	display: inline-block;
@@ -67,8 +74,9 @@
 .menus {
 	display: inline-block;
 	float: left;
-	padding: 10px 0;
+	padding: 10px 5px;
 }
+
 
 ul li {
 	font-family: sans-serif;
@@ -78,11 +86,7 @@ ul li {
 
 i.fa-search {
 	position: relative;
-	left: 90px;
-	top: 0px;
+	left: 210px;
+	top: 20px;
 	color: silver;
 }
-
-#companyinfo ul li { display: inline; white-space: pre; }
-#companyinfo ul li:after { content: " \00b7 "; }
-#companyinfo ul li:last-child:after { content: ""; }

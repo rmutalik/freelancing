@@ -63,34 +63,43 @@ body {
 	/*background-color: yellow;*/
 }
 
-#sidebar a:link {
-	text-decoration: none;
-	color: black;
-	font-weight: 600;
+#scroll {
+	display: inline-block;
+	float: left;
+	width: 65%;
+	height: 1000px;
 }
 
-#companyinfo ul li { display: inline; white-space: pre; }
-#companyinfo ul li:after { content: " \00b7 "; }
-#companyinfo ul li:last-child:after { content: ""; }
-
 #stories {
-	width: 65%;
 	height: 100px;
 	background-color: pink;
 	margin-top: 30px;
 }
 
 #posts {
-	width: 65%;
-	height: 1000px;
+	height: inherit;
 	background-color: orange;
 	margin-top: 30px;
 }
 
-#profile {
-	float: right;
-	margin-right: 50px;
+#sidebar {
+	display: inline-block;
+	float: left;
 }
+
+#sidebar a:link {
+	text-decoration: none;
+	color: black;
+	font-weight: 600;
+}
+
+#profile {
+	
+}
+
+#companyinfo ul li { display: inline; white-space: pre; }
+#companyinfo ul li:after { content: " \00b7 "; }
+#companyinfo ul li:last-child:after { content: ""; }
 
 
 .floatleft {

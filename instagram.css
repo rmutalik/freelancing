@@ -2,6 +2,7 @@ body {
 	margin: 0;
 	font-family: Segoe UI, Ariel, sans-serif;
 	font-size: 14px;	
+	background-color: whitesmoke;
 }
 
 #left_blank {
@@ -12,10 +13,9 @@ body {
 
 #middle {
 	width: 70%;
-	background-color: red;
+	/*background-color: red;*/
 	display: block;
 	float: left;
-	overflow-y: scroll;
 }
 
 #right_blank {
@@ -29,7 +29,7 @@ body {
 	height: inherit;
 	display: flex;
 	justify-content: space-between;
-	background-color: lime;
+	background-color: white;
 }
 
 #logo {
@@ -72,19 +72,20 @@ body {
 
 #stories {
 	height: 125px;
-	background-color: pink;
+	background-color: white;
 	margin-top: 30px;
 }
 
 #posts {
 	height: inherit;
-	background-color: orange;
+	background-color: white;
 	margin-top: 30px;
 }
 
 #sidebar {
 	display: inline-block;
 	float: left;
+	/*background-color: whitesmoke;*/
 }
 
 #sidebar a:link {
@@ -94,7 +95,7 @@ body {
 }
 
 #profile {
-	background-color: #f8f8f8;
+	/*background-color: #f8f8f8;*/
 	/*width: 106%;*/
 	margin-top: 50px;
 	margin-left: 30px;
@@ -105,10 +106,18 @@ body {
 #companyinfo ul li:last-child:after { content: ""; }
 
 #suggestions {
-	background-color: yellow;
+	/*background-color: yellow;*/
 	margin-left: 30px;
 	width: 91.5%;
 	height: 300px;
+}
+
+#suggestions p {
+	margin: 0; 
+	display: inline-block; 
+	float: left; 
+	font-weight: bold; 
+	color: gray;
 }
 
 
@@ -141,4 +150,8 @@ i.fa-search {
 	left: 210px;
 	top: 20px;
 	color: silver;
+}
+
+hr {
+	color: gray;
 }

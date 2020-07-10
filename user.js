@@ -7,23 +7,27 @@ function User(name, handle, hasStory, isFollowing) {
 	this.isFollowing = isFollowing;
 }
 
-function addStory(user) {
+function addStory(user, i) {
+	// wrap with 'div' element
+	let div = document.createElement("div");
+	document.getElementById("stories").appendChild(div);
+
 	// account_picture
 	let node = document.createElement("img");
 	node.setAttribute("src", "./account_pictures/" + user.handle + ".png");
 
 	// wrap 'img' with 'a' element
-	let link = document.createElement('a');
+	let link = document.createElement("a");
   link.innerHTML = node.outerHTML;
   link.setAttribute('href', '#');
   
-  document.getElementById("stories").appendChild(link);
+  document.querySelectorAll("#stories div")[i].appendChild(link);
 
 	// handle
 	node = document.createElement("p");
 	let textnode = document.createTextNode(user.handle);
 	node.appendChild(textnode);
-	document.getElementById("stories").appendChild(node);
+	document.querySelectorAll("#stories div")[i].appendChild(node);
 }
 
 function setStyle( objId, propertyObject )
@@ -48,20 +52,33 @@ users.push(user1, user2, user3, user4, user5, user6, user7);
 
 console.log(users);
 
+new_users = [];
 for(i=0; i<users.length; i++) {
 	if (users[i].isFollowing == true && users[i].hasStory == true) {
 		// console.log(users[i].handle);
-		addStory(users[i]);
+		new_users.push(users[i]);
 	}
+}
+
+for(i=0; i<new_users.length; i++) {
+	addStory(new_users[i], i);
 }
 
 let style = document.createElement('style');
 style.innerHTML = 
-	'#stories p {' + 
+	'#stories div {' + 
 		'display: inline-block; ' + 
 		'float: left; ' + 
-		'padding: 10px; '
+		'padding: 20px 5px 5px 10px ; ' + 
+		'text-align: center; '
 	'}';
 
 let ref = document.querySelector('script');
 ref.parentNode.insertBefore(style, ref);
+
+
+let elem = document.querySelectorAll("#stories p");
+for(i=0; i<elem.length; i++) {
+	elem[i].style.margin = '0';
+	elem[i].style.fontSize = '12px';
+}

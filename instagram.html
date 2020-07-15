@@ -35,7 +35,18 @@
 
 			<div id="posts">
 				<div id="post_header" style="height: 50px;">
-					<img src="ellipsis.png" style="display: inline-block; float: right; padding-top: 15px; padding-right: 15px;" />
+					<!-- Trigger/Open The Modal -->
+					<button id="myBtn" style="display: inline-block; float: right; padding-top: 15px; padding-right: 15px;"><img src="ellipsis.png" /></button>
+
+					<!-- The Modal -->
+					<div id="myModal" class="modal">
+
+					  <!-- Modal content -->
+					  <div class="modal-content">
+					    <span class="close">&times;</span>
+					  </div>
+
+					</div>					
 				</div>
 				<div id="post_picture" style="background-color: yellow; height: 650px;"></div>
 				<div id="post_activity" style="background-color: green; height: 200px;"></div>
@@ -91,5 +102,6 @@
 
 
 	<script src="./user.js"></script>
+	<script src="./modal.js"></script>
 </body>
 </html>

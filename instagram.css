@@ -143,6 +143,37 @@ body {
 	color: gray;
 }
 
+#modal_button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	display: inline-block; 
+	float: right; 
+	padding-top: 15px; 
+	padding-right: 15px;
+}
+
+#post_comment input {
+	display: inline-block; 
+	float: left; 
+	height: inherit; 
+	border: none; 
+	padding: 0 0 10px 10px;
+}
+
+#post_comment button {
+	display: inline-block; 
+	float: right; 
+	height: inherit; 
+	cursor: pointer; 
+	font-weight: bold; 
+	color: deepskyblue; 
+	background-color: white; 
+	border: none; 
+	font-family: Segoe UI; 
+	font-size: 14px;
+}
+
 
 .profile_text {
 	display: flex;
@@ -196,13 +227,8 @@ body {
   padding: 12px 0; /* Add some padding */
   text-decoration: none; /* Remove underline from links */
   text-align: center;
-  border-bottom: 1px solid lightgray;  
 }
 
-/*.vertical-menu:last-child {
-	border-bottom: none;
-}
-*/
 
 ul li {
 	font-family: sans-serif;
@@ -230,4 +256,11 @@ hr {
 
 *:focus {
 	outline: none;
+}
+
+::placeholder {
+	color: gray;
+	opacity: 0.9;
+	font-family: Segoe UI, Ariel, sans-serif;
+	font-size: 14px;
 }

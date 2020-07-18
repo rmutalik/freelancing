@@ -186,6 +186,11 @@ body {
 	float: left;
 }
 
+.floatright {
+	display: inline-block;
+	float: right;
+}
+
 .menus {
 	display: inline-block;
 	float: left;

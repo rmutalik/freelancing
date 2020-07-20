@@ -108,7 +108,8 @@ body {
 #sidebar {
 	display: inline-block;
 	float: left;
-	/*background-color: whitesmoke;*/
+	position: sticky;
+	top: 0;
 }
 
 #sidebar a:link {

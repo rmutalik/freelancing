@@ -78,7 +78,7 @@ function createPost(handle, loc, picture, caption, timestamp) {
 	let p = document.createElement("p");
 	p.innerHTML = date;
 	p.style.color = "gray";
-	p.style.fontSize = "10px";
+	p.style.fontSize = "11px";
 	document.getElementById("post_activity").appendChild(p);	
 
 }

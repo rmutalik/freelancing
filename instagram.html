@@ -98,6 +98,7 @@
 				<a class="floatright" href="#see_all">See All</a>
 				<br/><br/>
 			</div>
+			<br/>
 
 			<div id="companyinfo">
 				<ul>
@@ -115,6 +116,13 @@
 					<li class="floatleft"><a href="#language">Language</a></li>
 				</ul>
 			</div> 
+			<script>
+				let sidebar_links = document.querySelectorAll(".floatleft a");
+
+				for (link in sidebar_links) {
+					sidebar_links[link].style.color = "lightgray";
+				}
+			</script>
 			<br/>
 
 			<p style="margin-left: 40px; color: lightgray; font-size: 12px; font-family: sans-serif;">© 2020 INSTAGRAM FROM FACEBOOK</p>

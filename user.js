@@ -38,20 +38,23 @@ function setStyle( objId, propertyObject )
 }
 
 
+// Dummy users
 let users = [];
 
 let user1 = new User("US National Whitewater Center", "usnwc", true, true);
-let user2 = new User("Metallica", "metallica", false, true);
-let user3 = new User("Tom Platz", "tomplatz", false, false);
-let user4 = new User("Chris Bumstead", "cbum", true, false);
+let user2 = new User("Metallica", "metallica", true, true);
+let user3 = new User("Tom Platz", "tomplatz", true, false);
+let user4 = new User("Chris Bumstead", "cbum", true, true);
 let user5 = new User("LeBron James", "kingjames", true, true);
-let user6 = new User("Artemus Dolgin", "artemusdolgin", true, true);
+let user6 = new User("Artemus Dolgin", "artemusdolgin", false, true);
 let user7 = new User("Google", "google", true, true);
 
 users.push(user1, user2, user3, user4, user5, user6, user7);
 
 console.log(users);
 
+
+// If users you are following add a story, add it to your story feed
 new_users = [];
 for(i=0; i<users.length; i++) {
 	if (users[i].isFollowing == true && users[i].hasStory == true) {
@@ -64,6 +67,15 @@ for(i=0; i<new_users.length; i++) {
 	addStory(new_users[i], i);
 }
 
+
+// Style the stories in your story feed
+let elem = document.querySelectorAll("#stories p");
+for(i=0; i<elem.length; i++) {
+	elem[i].style.margin = '0';
+	elem[i].style.fontSize = '12px';
+}
+
+// Float left the stories in your story feed
 let style = document.createElement('style');
 style.innerHTML = 
 	'#stories div {' + 
@@ -73,12 +85,6 @@ style.innerHTML =
 		'text-align: center; '
 	'}';
 
+// Insert the style above before the page is loaded
 let ref = document.querySelector('script');
 ref.parentNode.insertBefore(style, ref);
-
-
-let elem = document.querySelectorAll("#stories p");
-for(i=0; i<elem.length; i++) {
-	elem[i].style.margin = '0';
-	elem[i].style.fontSize = '12px';
-}

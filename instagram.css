@@ -181,16 +181,6 @@ body {
 	padding-left: 20px;
 }
 
-.floatleft {
-	display: inline-block;
-	float: left;
-}
-
-.floatright {
-	display: inline-block;
-	float: right;
-}
-
 .menus {
 	display: inline-block;
 	float: left;
@@ -221,10 +211,6 @@ body {
   width: 25%; /* Could be more or less, depending on screen size */
 }
 
-.vertical-menu {
-  /*width: 200px;  Set a width if you like */
-}
-
 .vertical-menu a {
   background-color: white; /* Grey background color */
   color: black; /* Black text color */
@@ -232,6 +218,21 @@ body {
   padding: 12px 0; /* Add some padding */
   text-decoration: none; /* Remove underline from links */
   text-align: center;
+}
+
+/* Useful classes */
+.floatleft {
+	display: inline-block;
+	float: left;
+}
+
+.floatright {
+	display: inline-block;
+	float: right;
+}
+
+.hidden {
+	display: none;
 }
 
 

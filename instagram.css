@@ -99,7 +99,7 @@ body {
 }
 
 #posts {
-	height: 1000px;
+	height: max-content;
 	background-color: white;
 	margin-top: 30px;
 	border: 1px solid gainsboro;
@@ -234,6 +234,13 @@ body {
 
 .hidden {
 	display: none;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 

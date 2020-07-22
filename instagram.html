@@ -33,48 +33,50 @@
 
 			</div>
 
-			<div id="posts">
-				<div id="post_header" style="height: 50px;">
-					<!-- Trigger/Open The Modal -->
-					<button id="modal_button" class="floatright"><img src="ellipsis.png" /></button>
+			<template>
+				<div id="posts">
+					<div id="post_header" style="height: 50px;">
+						<!-- Trigger/Open The Modal -->
+						<button id="modal_button" class="floatright"><img src="ellipsis.png" /></button>
 
-					<!-- The Modal -->
-					<div id="myModal" class="modal">
+						<!-- The Modal -->
+						<div id="myModal" class="modal">
 
-					  <!-- Modal content -->
-					  <div class="modal-content">
-					    <div class="vertical-menu">
-					    	<a href="#"><span style="color: red; font-weight: bold;">Report Inappropriate</span></a>
-					    	<a href="#" style="color: red; font-weight: bold;">Unfollow</a>
-					    	<a href="#">Go to post</a>
-					    	<a href="#">Share</a>
-					    	<a href="#">Copy Link</a>
-					    	<a href="#">Embed</a>
-					    	<a href="" class="close">Cancel</a>
-					    </div>
-					  </div>
+						  <!-- Modal content -->
+						  <div class="modal-content">
+						    <div class="vertical-menu">
+						    	<a href="#"><span style="color: red; font-weight: bold;">Report Inappropriate</span></a>
+						    	<a href="#" style="color: red; font-weight: bold;">Unfollow</a>
+						    	<a href="#">Go to post</a>
+						    	<a href="#">Share</a>
+						    	<a href="#">Copy Link</a>
+						    	<a href="#">Embed</a>
+						    	<a href="" class="close">Cancel</a>
+						    </div>
+						  </div>
 
+						</div>
+					</div>
+					<div id="post_picture">
+						
+					</div>
+					<div id="post_activity" style="margin: 10px; height: max-content;">	
+						<div id="icons">
+							<a><img class="floatleft" src="./like_icon.png" /></a>
+							<a><img class="floatleft" src="./comment_icon.png" /></a>
+							<a><img class="floatleft" src="./share_icon.png" /></a>
+							<a><img class="floatright" src="./bookmark_icon.png" /></a>
+						</div>	
+						<br/>
+						<p style="font-weight: 500; margin-left: 5px;">3 likes</p>
+					</div>
+					<hr style="width: 45%; left: 228px;" />
+					<div id="post_comment" style="height: 50px;">
+						<input type="text" placeholder="Add a comment..." size="90%" />
+						<button>Post</button>
 					</div>
 				</div>
-				<div id="post_picture">
-					
-				</div>
-				<div id="post_activity" style="margin: 10px; height: max-content;">	
-					<div id="icons">
-						<a><img class="floatleft" src="./like_icon.png" /></a>
-						<a><img class="floatleft" src="./comment_icon.png" /></a>
-						<a><img class="floatleft" src="./share_icon.png" /></a>
-						<a><img class="floatright" src="./bookmark_icon.png" /></a>
-					</div>	
-					<br/>
-					<p style="font-weight: 500; margin-left: 5px;">3 likes</p>
-				</div>
-				<hr style="width: 45%; left: 228px;" />
-				<div id="post_comment" style="height: 50px;">
-					<input type="text" placeholder="Add a comment..." size="90%" />
-					<button>Post</button>
-				</div>
-			</div>
+			</template>				
 
 		</div>
 

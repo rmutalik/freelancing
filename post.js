@@ -7,6 +7,10 @@ function createPost(handle, loc, picture, caption, timestamp) {
 	this.caption = caption;
 	this.timestamp = timestamp;
 
+	// Template
+	let post_template = document.getElementsByTagName("template")[0];
+	let item = post_template.content.querySelector("#posts");
+	let post = document.importNode(item, true);
 
 	// post header
 

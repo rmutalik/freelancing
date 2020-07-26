@@ -8,10 +8,21 @@ function createPost(handle, loc, picture, caption, timestamp) {
 	this.timestamp = timestamp;
 
 	// Template
+	
 	let post_template = document.getElementsByTagName("template")[0];
-	let item = post_template.content.querySelector("#posts");
-	let post = document.importNode(item, true);
+	console.log(post_template);	
+	// let item = post_template.content.querySelector("#posts");
+	let post = post_template.cloneNode(true);
+	console.log(post);
+	document.getElementById("posts").appendChild(post);
+	console.log(document.getElementById("posts"));
 
+
+	let elmnt = document.getElementById("posts");
+	let cln = elmnt.cloneNode(true);
+	document.body.appendChild(cln);
+	
+	
 	// post header
 
 	// account picture

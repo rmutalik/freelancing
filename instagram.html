@@ -33,25 +33,15 @@
 
 			</div>
 
-<!-- 			<div id="posts">
-
-			</div> -->
-
 			<template>
 				<div id="posts">
 
-				</div>
-			</template>				
-
-		</div>					
-<!-- 					<div id="post_header" style="height: 50px;">
-						// Trigger/Open The Modal
+					<div id="post_header" style="height: 50px;">
+						<!-- Trigger/Open The Modal -->
 						<button id="modal_button" class="floatright"><img src="ellipsis.png" /></button>
 
-						// The Modal
 						<div id="myModal" class="modal">
 
-						  // Modal content
 						  <div class="modal-content">
 						    <div class="vertical-menu">
 						    	<a href="#"><span style="color: red; font-weight: bold;">Report Inappropriate</span></a>
@@ -83,7 +73,12 @@
 					<div id="post_comment" style="height: 50px;">
 						<input type="text" placeholder="Add a comment..." size="90%" />
 						<button>Post</button>
-					</div> -->
+					</div>
+
+				</div>
+			</template>				
+
+		</div>					
 
 		<!-- Fixed Sidebar -->
 		<div id="sidebar">
@@ -124,7 +119,7 @@
 				let sidebar_links = document.querySelectorAll(".floatleft a");
 
 				for (link in sidebar_links) {
-					sidebar_links[link].style.color = "lightgray";
+					sidebar_links.item(link).style.color = "lightgray";
 				}
 			</script>
 			<br/>
@@ -139,16 +134,7 @@
 
 	<!-- Scripts -->
 	<script src="./user.js"></script>
-	<script src="./modal.js"></script>
-	<!-- <script src="./post.js" defer></script> -->
-
-	<script>
-		let post_template = document.getElementsByTagName("template")[0];
-		let post = post_template.content.cloneNode(true);
-		console.log(post_template.content);
-		// test.style.backgroundColor = "green";
-
-		document.body.appendChild(post);
-	</script>
+	<script src="./post.js"></script>
+	<!-- <script src="./modal.js"></script>	 -->
 </body>
 </html>

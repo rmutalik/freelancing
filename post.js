@@ -8,20 +8,12 @@ function createPost(handle, loc, picture, caption, timestamp) {
 	this.timestamp = timestamp;
 
 	// Template
-	
 	let post_template = document.getElementsByTagName("template")[0];
-	console.log(post_template);	
-	// let item = post_template.content.querySelector("#posts");
-	let post = post_template.cloneNode(true);
-	console.log(post);
-	document.getElementById("posts").appendChild(post);
-	console.log(document.getElementById("posts"));
+	let posts = post_template.content.cloneNode(true);
+	document.getElementById("scroll").appendChild(posts);
 
-
-	let elmnt = document.getElementById("posts");
-	let cln = elmnt.cloneNode(true);
-	document.body.appendChild(cln);
-	
+	let post = document.getElementById("posts");
+	document.getElementById("scroll").appendChild(post);
 	
 	// post header
 
@@ -100,5 +92,6 @@ function createPost(handle, loc, picture, caption, timestamp) {
 
 
 // call function
-createPost("cbum", "My House", "dog.png", "This is a dog.", new Date(2019, 10, 24));
-// createPost("usnwc", "Your Mom's House", "dog2.png", "This is also a dog.");
+createPost("cbum", "Your Mom's House", "dog.png", "This is a dog.", new Date(2019, 3, 20));
+createPost("metallica", "Los Angeles", "dog3.png", "Bitches be trippin.", new Date());
+// createPost("usnwc", "My House", "dog2.png", "This is also a dog.", new Date(2018, 10, 24));

@@ -39,6 +39,11 @@
 
 			<template>
 				<div id="posts">
+
+				</div>
+			</template>				
+
+		</div>					
 <!-- 					<div id="post_header" style="height: 50px;">
 						// Trigger/Open The Modal
 						<button id="modal_button" class="floatright"><img src="ellipsis.png" /></button>
@@ -79,10 +84,6 @@
 						<input type="text" placeholder="Add a comment..." size="90%" />
 						<button>Post</button>
 					</div> -->
-				</div>
-			</template>				
-
-		</div>
 
 		<!-- Fixed Sidebar -->
 		<div id="sidebar">
@@ -139,6 +140,15 @@
 	<!-- Scripts -->
 	<script src="./user.js"></script>
 	<script src="./modal.js"></script>
-	<script src="./post.js"></script>
+	<!-- <script src="./post.js" defer></script> -->
+
+	<script>
+		let post_template = document.getElementsByTagName("template")[0];
+		let post = post_template.content.cloneNode(true);
+		console.log(post_template.content);
+		// test.style.backgroundColor = "green";
+
+		document.body.appendChild(post);
+	</script>
 </body>
 </html>
